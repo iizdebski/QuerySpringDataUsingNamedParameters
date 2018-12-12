@@ -1,8 +1,6 @@
 package com.izdebski.PeopleManagementSpringBootDataApp;
 
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.TimeUnit;
 
 import com.izdebski.PeopleManagementSpringBootDataApp.entity.Person;
 import com.izdebski.PeopleManagementSpringBootDataApp.service.PeopleManagementService;

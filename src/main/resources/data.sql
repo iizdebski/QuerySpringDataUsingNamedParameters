@@ -24,3 +24,9 @@ INSERT INTO person_table (creation_date, email, first_name, last_name) VALUES
  'maya.m2018@gmail.com',
  'Maya',
  'Almadovar');
+
+INSERT INTO person_table (creation_date, email, first_name, last_name) VALUES
+('2037-02-18 04:11:08',
+ 'jack.m2018@gmail.com',
+ 'Jack',
+ 'Sparrow');
