@@ -1,5 +1,6 @@
 package com.izdebski.PeopleManagementSpringBootDataApp;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
@@ -24,9 +25,7 @@ public class PeopleManagementSpringBootDataAppApplication implements CommandLine
 
 	@Override
 	public void run(String... args) throws Exception {
-
-		CompletableFuture<Person> completableFuture = peopleManagementService.findByEmail("maya.m2018@gmail.com");
-		Person person = completableFuture.get(20, TimeUnit.SECONDS);
-		System.out.println(person);
+		List<Person>list = peopleManagementService.findByLastnameOrFirstname("Sparrow", "Jack");
+		list.forEach(System.out::println);
 	}
 }

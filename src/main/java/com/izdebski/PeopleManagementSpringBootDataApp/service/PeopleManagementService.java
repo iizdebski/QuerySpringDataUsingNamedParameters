@@ -1,6 +1,6 @@
 package com.izdebski.PeopleManagementSpringBootDataApp.service;
 
-import java.util.concurrent.CompletableFuture;
+import java.util.List;
 
 import com.izdebski.PeopleManagementSpringBootDataApp.dao.PeopleManangementService;
 import com.izdebski.PeopleManagementSpringBootDataApp.entity.Person;
@@ -13,8 +13,7 @@ public class PeopleManagementService {
     @Autowired
     private PeopleManangementService peopleManangementService;
 
-    public CompletableFuture<Person> findByEmail(String email) {
-        return peopleManangementService.findByEmail(email);
+    public List<Person> findByLastnameOrFirstname(String lastName, String firstName) {
+        return peopleManangementService.findByLastNameOrFirstName(lastName, firstName);
     }
-
 }
